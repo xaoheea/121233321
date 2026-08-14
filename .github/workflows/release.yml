@@ -34,7 +34,7 @@ jobs:
     strategy:
       matrix:
         target:
-          - { name: ipk, sdk_url: "https://downloads.openwrt.org/releases/23.05.4/targets/x86/64/openwrt-sdk-23.05.4-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz", sdk_tar: "SDK.tar.xz", sdk_dir: "SDK", artifact_pattern: "luci-app-ndsvoucher_.ipk" }
+          - { name: ipk, sdk_url: "https://downloads.openwrt.org/releases/23.05.4/targets/x86/64/openwrt-sdk-23.05.4-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz", sdk_tar: "SDK.tar.xz", sdk_dir: "SDK", artifact_pattern: "luci-app-ndsvoucher_*.ipk" }
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
